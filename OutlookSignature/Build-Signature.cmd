@@ -1,0 +1,1 @@
+PowerShell -noLogo -ExecutionPolicy Signed -File "%ProgramData%\acadon_PSM\PowerShell\OutlookSignature\Build-Signature.ps1"

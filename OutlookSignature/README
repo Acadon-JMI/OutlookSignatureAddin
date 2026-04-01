@@ -1,0 +1,19 @@
+.
+PowerShell Script.
+Is to be synchronised via acadon_PSM mechanism.
+
+Script evaluates the actual login. Asks the user which user to evaluate.
+Fetches Data (Givenname SurName Title Location ..) and askes User to confirm every field.
+Searches for Language Directorys in the Scriptdirectory and let the User Choose which languages should be used.
+Copys every File from selected Languages to the _local_Outlook path [Sync to web is to be done by outlook] ,
+at that replacing @@placeholder@@ with value. 
+For a rtf file the umlaut äöüßÄÖÜ will by replaced.
+
+Embedded Logos and Icons as base64 strings
+
+Status: 
+Languages: CH DE DK EN FR NL ; 
+
+User Information is fetched via LDAP from AD ; 
+
+CMD to start the local synchronised acadon_PSM version added ; ZIP container with this CMD for Email / Website distribution added
