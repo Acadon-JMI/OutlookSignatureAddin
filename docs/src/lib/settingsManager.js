@@ -1,7 +1,7 @@
-// settingsManager.js - Roaming Settings for user preferences (v6 - two-column layout for identity+contact)
+﻿// settingsManager.js - Roaming Settings for user preferences (v6 - two-column layout for identity+contact)
 
 var SETTINGS_KEY = 'acadon_signature_prefs';
-var ASSET_BASE_URL = 'https://acadon-jmi.github.io/OutlookSignatureAdddin/assets';
+var ASSET_BASE_URL = 'https://acadon-jmi.github.io/OutlookSignatureAddin/assets';
 
 function _defaultPreferences(officeLocation) {
   var lang = resolveLanguage(officeLocation);

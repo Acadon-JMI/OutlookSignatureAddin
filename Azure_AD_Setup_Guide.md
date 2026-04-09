@@ -1,4 +1,4 @@
-# Anleitung: Microsoft Entra ID (Azure AD) für die acadon Signatur konfigurieren
+﻿# Anleitung: Microsoft Entra ID (Azure AD) für die acadon Signatur konfigurieren
 
 > [!IMPORTANT]
 > **Wichtiger Hinweis zur Repository-URL:**
@@ -21,7 +21,7 @@ Damit das Outlook Add-in die **Position (Job Title)** und die **Telefonnummern**
 1. Wählen Sie im linken Menü **Authentifizierung**.
 2. Klicken Sie auf **Plattform hinzufügen** > **Web**.
 3. Geben Sie die **Redirect-URI** Ihrer Anwendung ein (die Basis-URL Ihres Add-ins), z. B.:
-   `https://acadon-jmi.github.io/OutlookSignatureAdddin/src/taskpane/taskpane.html`
+   `https://acadon-jmi.github.io/OutlookSignatureAddin/src/taskpane/taskpane.html`
 4. Aktivieren Sie unter **Implizite Gewährung und Hybrid-Flows**:
    - [x] **Zugriffstoken**
    - [x] **ID-Token**
@@ -32,7 +32,7 @@ Damit das Outlook Add-in die **Position (Job Title)** und die **Telefonnummern**
 Dies ist für das Office SSO notwendig:
 1. Wählen Sie **Eine API verfügbar machen**.
 2. Klicken Sie oben bei **Anwendungs-ID-URI** auf **Festlegen**.
-3. Ändern Sie `api://[GUID]` auf `api://acadon-jmi.github.io/OutlookSignatureAdddin/[CLIENT_ID]`, wobei `[CLIENT_ID]` Ihre Application (client) ID ist.
+3. Ändern Sie `api://[GUID]` auf `api://acadon-jmi.github.io/OutlookSignatureAddin/[CLIENT_ID]`, wobei `[CLIENT_ID]` Ihre Application (client) ID ist.
 4. Klicken Sie auf **Bereich hinzufügen** (Add a scope):
    - Bereichsname: `access_as_user`
    - Wer kann einwilligen: `Administratoren und Benutzer`
@@ -61,7 +61,7 @@ Dies ist für das Office SSO notwendig:
 ```xml
 <WebApplicationInfo>
   <Id>[IHRE_CLIENT_ID]</Id>
-  <Resource>api://acadon-jmi.github.io/OutlookSignatureAdddin/[IHRE_CLIENT_ID]</Resource>
+  <Resource>api://acadon-jmi.github.io/OutlookSignatureAddin/[IHRE_CLIENT_ID]</Resource>
   <Scopes>
     <Scope>User.Read</Scope>
     <Scope>profile</Scope>
